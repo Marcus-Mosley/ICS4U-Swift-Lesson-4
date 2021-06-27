@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//
+// Main.swift
+// Lesson 4 Challenge
+//
+// Created by Marcus A. Mosley on 2021-01-19
+//
+
+import SwiftUI
+import UIKit
+import PlaygroundSupport
+
+let toronto: UIImage = #imageLiteral(resourceName: "toronto.jpg")
+
+struct ContentView: View {
+    var body: some View {
+        ZStack() {
+            Image(uiImage: toronto)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(10)
+            VStack() {
+                Text("CN Tower")
+                    .font(.largeTitle)
+                    .padding([.top, .leading, .trailing])
+                Text("Toronto")
+                    .font(.caption)
+                    .padding([.leading, .bottom, .trailing])
+            }
+            .background(Color.black)
+            .opacity(0.8)
+            .cornerRadius(10)
+            .foregroundColor(Color.white)
+        }.padding()
+    }
+}
+
+PlaygroundPage.current.setLiveView(ContentView())
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 941}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
